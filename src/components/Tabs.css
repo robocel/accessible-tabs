@@ -1,0 +1,5 @@
+[role='tab']:hover,
+[role='tab']:focus,
+[role='tab']:active {
+  color: red;
+}

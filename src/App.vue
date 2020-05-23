@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>I guess this isn't working?</h1>
+    <Tabs>
+      <TabPanel>
+        <template v-slot:header>💰Tab 1</template>
+        <p>This is tab 1</p>
+      </TabPanel>
+      <TabPanel>
+        <template v-slot:header>🔥Tab 2</template>
+        <p>This is tab 2</p>
+      </TabPanel>
+      <TabPanel>
+        <template v-slot:header>👏Tab 3</template>
+        <p>This is tab 3</p>
+      </TabPanel>
+    </Tabs>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import { Tabs, TabPanel } from './components/Tabs.js';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld
+    Tabs,
+    TabPanel
   }
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
